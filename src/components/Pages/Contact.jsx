@@ -39,22 +39,22 @@ function Contact() {
         </Col>
 
         <Col md={6} className="contact-info mb-4">
-          <div class="address">
+          <div className="address">
             <h3>Contact Information</h3>
             <div>
-              <p><i class="fas add-fab fa-mobile-alt fa-lg"></i>647478383</p>
-              <p><i class="fas add-fab fa-phone-alt fa-lg"></i>847937237</p>
-              <p><i class="fas add-fab fa-envelope fa-lg"></i>geospace@gmail.com</p>
-              <p><i class="fas add-fab fa-map-marker-alt fa-lg"></i>Douala, Cameroon</p>
+              <p><i className="fas add-fab fa-mobile-alt fa-lg"></i>647478383</p>
+              <p><i className="fas add-fab fa-phone-alt fa-lg"></i>847937237</p>
+              <p><i className="fas add-fab fa-envelope fa-lg"></i>geospace@gmail.com</p>
+              <p><i className="fas add-fab fa-map-marker-alt fa-lg"></i>Douala, Cameroon</p>
             </div>
           </div>
-          <div class="social-media">
+          <div className="social-media">
             <h3>Social Media</h3>
             <div>
-              <p><i class="fab add-fab fa-facebook fa-lg"></i>Geospace_facebook</p>
-              <p><i class="fab add-fab fa-whatsapp fa-lg"></i>Geospace_whatsapp</p>
-              <p><i class="fab add-fab fa-twitter fa-lg"></i>Geospace_twitter</p>
-              <p><i class="fab add-fab fa-instagram fa-lg"></i>Geospace_instagram</p>
+              <p><i className="fab add-fab fa-facebook fa-lg"></i>Geospace_facebook</p>
+              <p><i className="fab add-fab fa-whatsapp fa-lg"></i>Geospace_whatsapp</p>
+              <p><i className="fab add-fab fa-twitter fa-lg"></i>Geospace_twitter</p>
+              <p><i className="fab add-fab fa-instagram fa-lg"></i>Geospace_instagram</p>
             </div>
           </div>
         </Col>

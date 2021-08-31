@@ -31,12 +31,12 @@ function Home(props) {
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
         <Row  className="features">
-          <Col md={4}>
+          <Col md={4} sm={12}>
             <Features />
             <Features />
             <Features />
           </Col>
-          <Col md={4}>
+          <Col md={4} sm={12}>
             <div className="feature-imgdiv">
               <img
                 className="feature-img"
@@ -47,7 +47,7 @@ function Home(props) {
               />
             </div>
           </Col>
-          <Col md={4}>
+          <Col md={4} sm={12}>
             <Features />
             <Features />
             <Features />

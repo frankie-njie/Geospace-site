@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Tabs, Tab, Carousel, CarouselItem } from "react-bootstrap";
+import { Col, Row, Tabs, Tab, Carousel} from "react-bootstrap";
 import ButtonMain from "../Buttons/ButtonMain";
 import ProductCard from "../Cards/ProductCard";
 import "./ProductDesc.css";

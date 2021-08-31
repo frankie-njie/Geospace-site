@@ -38,3 +38,11 @@ body{
     color: #a1a1a1;
   }
 
+  @media screen and (max-width: 600px) {
+    body{
+      font-size: 18px;
+    }
+    h1{
+      font-size: 4.5rem;
+    }
+  }

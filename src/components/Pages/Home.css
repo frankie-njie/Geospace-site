@@ -132,6 +132,12 @@
   }
   
 
-  @media screen {
+  @media screen and (max-width: 600px) {
+    .landing{
+      height: 100vh;
+      /* margin: auto 15%; */
+      text-align: center;
+      /* padding: 20% 15%; */
+    }
     
   }
