@@ -1,0 +1,40 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+  }
+  h1{
+    font-family: "Montserrat",sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+  h2{
+    font-family: "Mulish",sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2.5rem auto 1rem;
+    color: #011638;
+  }
+  h3{
+    font-family: "Mulish",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  h5{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.2rem;
+    margin-top: .5em;
+  }
+
+  button {
+    /* margin: 1rem 1.5rem; */
+    margin-right: 1.5rem;
+    margin-top: .5rem;
+    transition-duration: 0.4s;
+  }
+  hr{
+    border: none;
+    color: #a1a1a1;
+  }
+

@@ -1,0 +1,14 @@
+.recognition-items{
+    align-items: center;
+    text-align: center;
+    padding: 0 5px;
+  }
+  .recognition-items > * {
+    margin-bottom: 1rem;
+  }
+  .accolades-icon {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+  }
+  

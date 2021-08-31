@@ -1,0 +1,21 @@
+.product-content{
+    margin-top: 10rem;
+}
+.product-div{
+    margin: auto 12%;
+}
+.small-img{
+    margin-right: 10px;
+}
+.more-description{
+    margin: 5% 12%;
+}
+.relatedprod-div{
+    /* padding: 2% auto; */
+    background-color: #EEF0F2;
+    padding: 2% 12%;
+}
+
+.relatedprod-div > h2{
+    margin-bottom: 4%;
+}

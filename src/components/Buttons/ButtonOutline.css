@@ -1,0 +1,16 @@
+.btn-outline{
+    background-color: white;
+    border: 2px solid #EEF0F2 ;
+    border-radius: 4px;
+    color: #333333;
+    padding: 12px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .btn-outline:hover{
+    background-color: #00AFB9;
+    border: 2px solid #00AFB9 ;
+    color: white;
+  }

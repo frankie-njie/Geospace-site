@@ -1,0 +1,14 @@
+.feature{
+    margin-bottom: 7%;
+    border: 1px solid #EEF0F2;
+    border-radius: 4px;
+    box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
+    /* width: 26rem */
+}
+.feature-icon {
+    border-radius: 50%;
+    background-color: rgb(201, 201, 201);
+}
+.feature-text{
+    font-size: 14px;
+}

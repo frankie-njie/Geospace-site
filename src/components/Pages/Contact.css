@@ -1,0 +1,17 @@
+.contact-content{
+    margin: 2% 12%;
+  }
+  .info-contact{
+    margin: 2.5rem auto;
+  }
+  .info-locate{
+    margin: 2.5rem auto;
+  }
+  .faq , .location{
+    padding-right: 7rem;
+  }
+
+  .add-fab{
+    margin-right: 1rem;
+    color: #023E8A;
+  }

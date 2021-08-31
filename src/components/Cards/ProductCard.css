@@ -1,0 +1,13 @@
+.single-product {
+    width: 25%;
+    margin-right: 10px;
+    margin-bottom: 2rem;
+}
+
+.single-product > img{
+    width: 20rem;
+    height: 18rem;
+}
+.single-product > p{
+    font-size: 14px;
+}

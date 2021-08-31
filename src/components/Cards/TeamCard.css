@@ -1,0 +1,27 @@
+.team-contents{
+    margin: 5%;
+    padding: 1px;
+}
+.team-h2{
+    color: #EEF0F2;
+}
+.team-card{
+    margin-right: 3rem ;
+    margin-bottom: 4.5rem;
+}
+
+.team-icon{
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card-content{
+    text-align: center;
+  }
+.team-title{
+    color: #023e8a ;
+}
+/* .card-title {
+    color: #023e8a ;
+} */

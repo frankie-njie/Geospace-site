@@ -1,0 +1,20 @@
+nav{
+    background-color: #023E8A !important;
+    /* position: relative; */
+}
+.navbar-content{
+    margin: 1.5% auto ;
+}
+nav .nav-item{
+    margin: auto 12px;
+  }
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.bg-main{
+    background-color: #023E8A;
+  }
+/* .active{
+    color: #00AFB9 !important;
+    border-bottom: solid #00AFB9;
+} */

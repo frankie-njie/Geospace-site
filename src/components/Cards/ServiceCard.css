@@ -1,0 +1,21 @@
+.service-card{
+    /* margin-right: 3rem;
+    margin-bottom: 2.5rem; */
+    margin: 1.5rem 2.5rem;
+  }
+  .card-title{
+    font-weight: 500;
+  }
+
+  .card-link{
+    text-decoration: none;
+    color: #023E8A;
+  }
+  .card-text{
+    font-size: 14px;
+}
+
+
+/* img {
+    background-image: url(/src/images/grey-bg.jpg);
+} */

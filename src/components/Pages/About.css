@@ -1,0 +1,92 @@
+/* to_know */
+
+.to_know{
+    margin: 5%;
+    padding: 0 1rem;
+  }
+  .to_know > p{
+    margin: 2% 12%;
+  }
+
+/* word from founder */
+
+.word_from_founder{
+    background-color: #00AFB9;
+    color:#EEF0F2;
+  }
+  .founder_contents{
+    margin: 2% 12%;
+    padding: 1rem 0;
+  }
+  .founder_contents > h2{
+    color: #EEF0F2;
+  }
+  .founder-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .founder-details{
+    margin: 3rem auto;
+  }
+  .founder-details > *{
+    margin: 12px;
+    gap: 2rem;
+  }  
+
+/* Accolades */
+
+.recognition{
+    margin: 5% 12%;
+  }
+
+/* Our Mission */
+
+.our_mission{
+    margin: 5% 12%;
+  }
+  .our_mission_contents{
+    margin: 7% auto;
+    padding: 0 5px;
+  }
+
+/* Team Members */
+.team{
+    background-color: #023E8A;
+  }
+  
+  .team-contents{
+    /* margin: 2% 12%; */
+    margin: 5%;
+    padding: 1px;
+  }
+  .team-contents > h2{
+    color: #EEF0F2;
+    margin-top: 4rem;
+  }
+  .team-features{
+    margin: 5% auto;
+    /* padding: 0 1rem; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+/* Explore and learn more */
+.explore-more {
+    margin: 5% 12%;
+    padding: 0 5px;
+  }
+  .explore-img {
+    margin: 5% auto;
+  }
+  
+  /* get in touch */
+  
+  .explore-contact{
+    text-align: center;
+  }
+  .explore-contact > p{
+    margin: 4% auto;
+    padding: 0 5px;
+  }

@@ -1,0 +1,137 @@
+/* landing */
+
+.landing{
+    height: 100vh;
+    margin: auto 15%;
+    text-align: center;
+    padding: 20% 15%;
+  }
+  
+  
+  /* product features */
+  
+  .product_features{
+    /* height: 80vh; */
+    margin: 5%;
+    padding: 0.5rem 1rem;
+  }
+  .product_features .features{
+    margin: 7% auto;
+  }
+  .product_features > p{
+    text-align: center;
+  }
+  
+  .feature-imgdiv{
+    text-align: center;
+  }
+  .feature-img{
+    margin: 4% auto;
+    width: 22rem;
+    height: 350px;
+    border-radius: 50%;
+  }
+  
+  
+  /* Our servies */
+  
+  .our-services{
+    margin: 5%;
+    align-items: center;
+    padding: 0.5rem 2.5rem;
+  }
+  .our-services > p{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .services{
+    justify-content: center;
+  }
+  
+  
+  /* About Section */
+  
+  .contents{
+    background-color: #023E8A;
+    /* height: 85vh; */
+  }
+  .about_geospace{
+    padding: 2.5rem;
+    color: #EEF0F2;
+    margin: auto 5%;
+  }
+  
+  .about_geospace > h2{
+    color: #EEF0F2;
+    margin-bottom: 1.5rem;
+  }
+  .about_geospace > div {
+    justify-content: center;
+    margin: 7% auto;
+  }
+  
+  
+  /* Product Section */
+  .product-contents{
+    background-color: #EEF0F2;
+  }
+  .products{
+    margin: auto 5%;
+    text-align: center;
+    padding: 2.5rem;
+  }
+  
+  .some_products{
+    justify-content: center;
+    margin: 5% auto;
+  }
+  
+  /* partners */
+  
+  .partners{
+    margin: auto 5%;
+  }
+  .partners-div{
+    margin: 5% auto;
+  }
+  .partner_img{
+    width: 25%;
+    margin: 10px;
+  }
+  
+  /* Get in Touch */
+  .contact_contents{
+    background-color: #EEF0F2;
+  }
+  .get_in_touch{
+    margin: auto 5%;
+    padding: 0.5rem 0;
+  }
+  .get_in_touch > p{
+    text-align:  center;
+  }
+  .contact-form {
+    margin: 5% auto
+  }
+  .form-group > input{
+    height: 2.5rem;
+    margin-bottom: 12px;
+  }
+  
+  /* works */
+  .works{
+    margin: auto 5%;
+  }
+  .works_img {
+    margin: 4rem auto;
+    justify-content: center ;
+    flex-wrap: wrap;
+  }
+  .single-partner{
+    margin: 10px 5px;
+  }
+  
+
+  @media screen {
+    
+  }
