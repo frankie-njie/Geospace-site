@@ -5,22 +5,38 @@ import Features from "../Cards/FeatureCard";
 import ServiceCard from "../Cards/ServiceCard";
 import ProductCard from "../Cards/ProductCard";
 
-
 import './Home.css'
 
 function Home(props) {
+  let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
+
+  fetch(homeUrl) 
+  .then(response => {
+    if(response.ok){
+      return response
+    }
+    throw Error(response.statusText);
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.features);
+  })
+
+
   return (
     <div>
       <div className="landing mb-4">
-        <h3>WELCOME TO</h3>
-        <h1>GEOSPACE AFRICA LTD</h1>
-        <p className="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
-        <div className="landing-buttons">
-          <ButtonMain type="main" path="/products"  btnValue="Products" />
-          <ButtonMain type="outline" path="/services" btnValue="Our Services" />
+        <div className="landing-div">
+          <h3>WELCOME TO</h3>
+          <h1>GEOSPACE AFRICA LTD</h1>
+          <p className="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+          <div className="landing-buttons">
+            <ButtonMain type="main" path="/products"  btnValue="Products" />
+            <ButtonMain type="outline" path="/services" btnValue="Our Services" />
+          </div>
         </div>
       </div>
 
@@ -75,7 +91,7 @@ function Home(props) {
         <div className="about_geospace">
           <h2>What You need to know About GeoSpace</h2>
           <Row className="about-row">
-            <Col>
+            <Col sm={12}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -100,7 +116,7 @@ function Home(props) {
               </p>
               <ButtonMain type="alt" path="/about" btnValue="learn More" />
             </Col>
-            <Col>
+            <Col sm={12}>
               <img src="images/grey-bg.jpg" alt="" width="100%" height="100%" />
             </Col>
           </Row>

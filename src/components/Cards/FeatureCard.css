@@ -12,3 +12,13 @@
 .feature-text{
     font-size: 14px;
 }
+
+@media (max-width: 600px) {
+    .feature{
+        /* width: max-content; */
+    }
+    .feature-icon{
+        width: 30%;
+        height: 100%;
+    }
+}

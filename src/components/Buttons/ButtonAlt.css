@@ -13,3 +13,9 @@
   background-color: #0A585D;
   transition-duration: 0.4s;
 }
+
+@media screen and (max-width: 600px) {
+  .btn-alternate{
+    font-size: 16px;
+  }
+}

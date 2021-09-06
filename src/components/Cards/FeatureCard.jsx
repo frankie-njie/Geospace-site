@@ -8,10 +8,10 @@ function Features (props) {
         <Card className="feature" >          
             <Card.Body>
                 <Row>
-                    <Col md={3}>
+                    <Col md={3} sm={4}>
                         <Card.Img alt="feature icon" className="feature-icon" src="/images/grey-bg.jpg" width="100%" height="100%" />
                     </Col>
-                    <Col md={9} >
+                    <Col md={9} sm={8} >
                         <Card.Title><h5>Special title treatment</h5></Card.Title>
                         <Card.Text className="feature-text">
                         With supporting text below as a natural lead-in to additional content.

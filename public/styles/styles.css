@@ -38,11 +38,21 @@ body{
     color: #a1a1a1;
   }
 
-  @media screen and (max-width: 600px) {
-    body{
-      font-size: 18px;
-    }
+  @media (max-width: 600px) {
     h1{
-      font-size: 4.5rem;
+      font-size: 2.3rem;
+    }
+    h2{
+      font-size: 1.8rem;
+    }
+    h3{
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 14px;
+    }
+    button {
+      margin-right: 1rem;
     }
   }

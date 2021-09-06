@@ -5,8 +5,9 @@
     margin: auto 15%;
     text-align: center;
     padding: 20% 15%;
+    /* position: relative; */
   }
-  
+
   
   /* product features */
   
@@ -132,12 +133,77 @@
   }
   
 
-  @media screen and (max-width: 600px) {
+
+
+  @media (max-width: 600px) {
     .landing{
       height: 100vh;
-      /* margin: auto 15%; */
       text-align: center;
-      /* padding: 20% 15%; */
+      padding: 20% 0;
+      margin: auto 5%;
+      position: relative; 
+     } 
+
+    .landing-div{
+      /* padding: 5%; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
     }
+
+    /* product features */
+    .product_features{
+      padding: 0;
+    }
+    .our-services{
+      padding: 0;
+    }
+
+    /* About Section */
+    .about_geospace{
+      padding: 2.5rem 0;
+    }
+
+    .about-row{
+      flex-direction: column-reverse;
+    }
+    .about-row > div {
+      margin: 1rem 0
+    }
+
+    /* Product Section */
+    .products{
+      padding: 2.5rem 0;
+    }
+
+    .single-product{
+      width: 50%;
+      margin-right: 0;
+    }
+    .single-product > img {
+      width: 11rem;
+      height: 14rem;
+    }
+
+
+    /* partners */
+    .partners-div{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .partner_img{
+      width: 44%;
+    }
+
+    /* Get in Touch */
+    .contact-form{
+      flex-direction: column-reverse;
+    }
+    .contact-form > div{
+      margin-bottom: 1.5rem;
+    }
+
     
   }

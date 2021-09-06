@@ -4,6 +4,12 @@ import './Products.css'
 import Banner from '../Banner';
 import ProductCard from '../Cards/ProductCard';
 
+const products = [
+    {proudId: 1, name: "sample", description: "lorem ipsum delore to do something"},
+    {proudId: 2, name: "Tes2", description: "lorem ipsum delore to do something"},
+    {proudId: 3, name: "Test3", description: "lorem ipsum delore to do something"}
+]
+
 function Products (){
     return (
         <div>
@@ -33,7 +39,8 @@ function Products (){
                 </div>
                 <hr />
                 <div className="mt-4 d-flex flex wrap">
-                    <ProductCard />
+                    {products.map(()=><ProductCard />)}
+                    
 
                 </div>
             </Col>

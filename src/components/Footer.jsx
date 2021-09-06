@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <Container className="footer-content">
-        <Row>
+        <Row className="footer-main">
           <Col className="footer-body">
             <div>
               <h5 className="footer-h5">Geospace Africa Ltd</h5>
