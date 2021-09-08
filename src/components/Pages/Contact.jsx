@@ -1,10 +1,13 @@
 import React from "react";
 import { Row, Col, Accordion, Form, FloatingLabel } from "react-bootstrap";
+import Banner from "../Banner";
 import ButtonMain from "../Buttons/ButtonMain";
 import "./Contact.css";
 
 function Contact() {
   return (
+    <div>
+      <Banner head="Contact Us" />
     <div className="contact-content">
       <h2>Get In Touch</h2>
       <Row className="info-contact">
@@ -95,6 +98,7 @@ function Contact() {
             </Form>
         </Col>
       </Row>
+    </div>
     </div>
   );
 }

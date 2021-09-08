@@ -38,10 +38,8 @@ function Products (){
                     <Button variant="light">Colors</Button>
                 </div>
                 <hr />
-                <div className="mt-4 d-flex flex wrap">
+                <div className="product-all-contents mt-4 d-flex flex-wrap">
                     {products.map(()=><ProductCard />)}
-                    
-
                 </div>
             </Col>
         </Row>

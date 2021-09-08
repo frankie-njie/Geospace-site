@@ -10,7 +10,7 @@ import './Home.css'
 function Home(props) {
   let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
 
-  fetch(homeUrl) 
+  const fetchData =  fetch(homeUrl) 
   .then(response => {
     if(response.ok){
       return response
@@ -19,9 +19,8 @@ function Home(props) {
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data.features);
+    return data
   })
-
 
   return (
     <div>
@@ -91,7 +90,7 @@ function Home(props) {
         <div className="about_geospace">
           <h2>What You need to know About GeoSpace</h2>
           <Row className="about-row">
-            <Col sm={12}>
+            <Col md={6} sm={12}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -116,7 +115,7 @@ function Home(props) {
               </p>
               <ButtonMain type="alt" path="/about" btnValue="learn More" />
             </Col>
-            <Col sm={12}>
+            <Col md={6} sm={12}>
               <img src="images/grey-bg.jpg" alt="" width="100%" height="100%" />
             </Col>
           </Row>

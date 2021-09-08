@@ -6,6 +6,7 @@
     color: #EEF0F2;
 }
 .team-card{
+    width: 25rem;
     margin-right: 3rem ;
     margin-bottom: 4.5rem;
 }
@@ -25,3 +26,11 @@
 /* .card-title {
     color: #023e8a ;
 } */
+
+@media (max-width: 600px){
+    .team-card{
+        width: 22rem;
+        margin-right: 0 ;
+        margin-bottom: 4rem;
+    }
+}

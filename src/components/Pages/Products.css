@@ -7,6 +7,26 @@
   .products-display{
     margin-right: 1.5em;
   }
+  /* .product-all-contents{
+     justify-content: space-between; 
+  }
+   */
   /* .buttons{
       margin-bottom: 1rem;
   } */
+
+
+  @media (max-width: 600px){
+    .products-page{
+      margin: auto 3%;
+    }
+
+    .product-all-contents{
+      justify-content: space-between;
+      margin: 5% auto;
+    }
+
+    .buttons{
+      margin-top: 1rem;
+    }
+  }

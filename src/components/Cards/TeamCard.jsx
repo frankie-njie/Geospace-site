@@ -4,7 +4,7 @@ import "./TeamCard.css";
 
 function TeamCard(props) {
   return (
-    <Card className="team-card" style={{ width: "25rem" }}>
+    <Card className="team-card">
       <Card.Body className="card-content">
         <Card.Img className="team-icon" src="images/grey-bg.jpg"></Card.Img>
         <Card.Title className="team-title">First Name</Card.Title>

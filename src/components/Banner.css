@@ -19,3 +19,13 @@
     transform: translate(-50%, -50%);
     color: white;
   }
+
+  @media (max-width: 600px){
+    .hero-image{
+      height: 20rem;
+      margin-top: 4.7rem;
+    }
+    .hero-text{
+      width: 90%;
+    }
+  }

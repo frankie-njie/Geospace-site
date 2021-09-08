@@ -90,3 +90,59 @@
     margin: 4% auto;
     padding: 0 5px;
   }
+
+  @media (max-width: 600px){
+    .to_know > p{
+      margin: 0;
+      text-align: center;
+    }
+
+
+    /* word from founder */
+    .founder_contents {
+      margin: 2% 5%;
+    }
+    .founder-details{
+      flex-direction: column;
+    }
+    .founder-details > *{
+      margin: 12px auto;
+      text-align: center;
+    }
+
+    .recognition{
+      margin: 5%;
+      flex-direction: column;
+    }
+    .recognition-items{
+      padding: 0%;
+      margin: 10px auto;
+      width: 80%;
+    }
+
+    /* Our Mission */
+    .our_mission {
+      margin: 5%;
+    }
+    .our_mission_contents{
+      flex-direction: column;
+    }
+    .our_mission_contents > div {
+      margin-bottom: 1rem;
+    }
+    .num_2{
+      flex-direction: column-reverse;
+    }
+
+    /* Explore and learn more */
+    .explore-more {
+      margin: 5%;
+      padding: 0;
+    }
+    .explore-img{
+      flex-direction: column;
+    }
+    .explore-img > div {
+      margin-bottom: 1.2rem;
+    }
+  }

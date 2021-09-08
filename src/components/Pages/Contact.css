@@ -15,3 +15,17 @@
     margin-right: 1rem;
     color: #023E8A;
   }
+
+  @media (max-width: 600px){
+    .contact-content{
+      margin: auto 5%;
+    }
+    .info-contact, .info-locate {
+      margin: 1.5rem auto;
+  }
+
+    .faq, .location {
+      padding-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }

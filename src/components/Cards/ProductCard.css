@@ -1,13 +1,25 @@
 .single-product {
     width: 25%;
-    margin-right: 10px;
+    margin-right: 1rem;
     margin-bottom: 2rem;
 }
 
 .single-product > img{
-    width: 20rem;
-    height: 18rem;
+    width: 18rem;
+    height: 16rem;
 }
 .single-product > p{
     font-size: 14px;
+}
+
+@media (max-width: 600px){
+    .single-product{
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+    .single-product > img {
+      width: 11rem;
+      height: 13rem;
+    }
 }

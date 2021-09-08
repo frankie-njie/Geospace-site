@@ -86,7 +86,7 @@ function About() {
           </Col>
         </Row>
 
-        <Row className="our_mission_contents">
+        <Row className="our_mission_contents num_2">
           <Col>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
