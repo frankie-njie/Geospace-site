@@ -125,7 +125,7 @@
   }
   .works_img {
     margin: 4rem auto;
-    justify-content: flex-start ;
+    justify-content: space-between ;
     flex-wrap: wrap;
   }
   .single-partner{
@@ -151,6 +151,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
+    }
+
+    .landing-buttons {
+      display: flex;
+      justify-content: space-evenly;
     }
 
     /* product features */

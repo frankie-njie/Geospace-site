@@ -4,24 +4,29 @@ import ButtonMain from "../Buttons/ButtonMain";
 import Features from "../Cards/FeatureCard";
 import ServiceCard from "../Cards/ServiceCard";
 import ProductCard from "../Cards/ProductCard";
-
 import './Home.css'
+import {useState, useEffect} from "react";
+
 
 function Home(props) {
   let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
 
-  const fetchData =  fetch(homeUrl) 
-  .then(response => {
-    if(response.ok){
-      return response
-    }
-    throw Error(response.statusText);
-  })
-  .then(response => response.json())
-  .then(data => {
-    return data
-  })
+  let homeData 
 
+      fetch(homeUrl) 
+      .then(response => {
+        if(response.ok){
+          return response
+        }
+        throw Error(response.statusText);
+      })
+      .then(response => response.json())
+      .then(data => {
+        homeData = data
+        console.log(homeData);
+      })
+
+      console.log(homeData);
   return (
     <div>
       <div className="landing mb-4">

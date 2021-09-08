@@ -1,6 +1,4 @@
 .service-card{
-    /* margin-right: 3rem;
-    margin-bottom: 2.5rem; */
     margin: 1.5rem 2.5rem;
   }
   .card-title{
@@ -19,3 +17,18 @@
 /* img {
     background-image: url(/src/images/grey-bg.jpg);
 } */
+
+@media (max-width: 600px) {
+  .service-card{
+    width: 23.5rem !important;
+    flex-direction: row;
+    margin: 1.5rem 0;   
+  }
+
+  .service-card > img {
+    width: 35%;
+  }
+  .service-card > .card-body {
+    padding: 0.5rem 1rem;
+  }
+}
