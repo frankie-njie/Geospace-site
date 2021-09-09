@@ -11,7 +11,8 @@ import {useState, useEffect} from "react";
 function Home(props) {
   let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
 
-  let homeData 
+
+  const [homeData, setHomeData] = useState({})
 
       fetch(homeUrl) 
       .then(response => {
@@ -22,11 +23,11 @@ function Home(props) {
       })
       .then(response => response.json())
       .then(data => {
-        homeData = data
-        console.log(homeData);
+        // setHomeData(data)
+        console.log(data);
       })
 
-      console.log(homeData);
+      // console.log(homeData);
   return (
     <div>
       <div className="landing mb-4">

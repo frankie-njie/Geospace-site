@@ -183,16 +183,6 @@
       padding: 2.5rem 0;
     }
 
-    /* .single-product{
-      width: 50%;
-      margin-right: 0;
-    }
-    .single-product > img {
-      width: 11rem;
-      height: 14rem;
-    } */
-
-
     /* partners */
     .partners-div{
         flex-wrap: wrap;
@@ -208,6 +198,10 @@
     }
     .contact-form > div{
       margin-bottom: 1.5rem;
+    }
+
+    .works_img {
+      justify-content: center ;
     }
     
   }
