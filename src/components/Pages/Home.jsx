@@ -1,32 +1,40 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Col, Row, Form } from "react-bootstrap";
 import ButtonMain from "../Buttons/ButtonMain";
 import Features from "../Cards/FeatureCard";
 import ServiceCard from "../Cards/ServiceCard";
 import ProductCard from "../Cards/ProductCard";
 import './Home.css'
-// import {useState, useEffect} from "react";
 
 
 function Home(props) {
   let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
+  const [products, setProducts] = useState();
+  const [features, setFeatures] = useState();
+  const [services, setServices] = useState()
 
-
-      // fetch(homeUrl) 
-      // .then(response => {
-      //   if(response.ok){
-      //     return response
-      //   }
-      //   throw Error(response.statusText);
-      // })
-      // .then(response => response.json())
-      // .then(data => {
-      //   homeData = data
-      //   console.log("homeData is now", homeData);
-      // })
+      useEffect(() => {
+        const response = async () => {
+        return fetch(homeUrl) 
+        .then(response => {
+          if(response.ok){
+            return response
+          }
+          throw Error(response.statusText);
+        })
+        .then(response => response.json())
+        .then(data => {
+          setProducts(data.products);
+          setFeatures(data.features);
+          setServices(data.services)
+        })
+      }
+        response();
+      }, [homeUrl])
 
       // let {features, services, products} = homeData;
-      // console.log(homeData);
+      console.log(products);
+      console.log("features", features);
 
   return (
     <div>
@@ -137,12 +145,17 @@ function Home(props) {
           </p>
 
           <div className="some_products d-flex flex-wrap">
+            {products ? products.map((product, index)=>{
+             return <ProductCard key={index} name={product.name} description={product.short_description} />
+            })
+            : null
+          }
+            {/* <ProductCard />
             <ProductCard />
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard /> */}
           </div>
           <ButtonMain type="main" path="/products" btnValue="View More" />
         </div>
