@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button, Col, ListGroup, Row} from 'react-bootstrap';
 import './Products.css'
-import Banner from '../Banner';
-import ProductCard from '../Cards/ProductCard';
+import Banner from '../../components/banner/Banner';
+import ProductCard from '../../components/cards/ProductCard';
 
 const products = [
     {proudId: 1, name: "sample", description: "lorem ipsum delore to do something"},

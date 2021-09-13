@@ -1,7 +1,7 @@
 import React from 'react';
 import './Services.css'
-import ServiceCard from '../Cards/ServiceCard';
-import Banner from '../Banner';
+import ServiceCard from '../../components/cards/ServiceCard';
+import Banner from "../../components/banner/Banner";
 
 
 function Services (){

@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Banner from "../Banner";
-import Accolades from "../Others/Accolades";
-import TeamCard from "../Cards/TeamCard";
+import Banner from "../../components/banner/Banner";
+import Accolades from "../../components/Others/Accolades";
+import TeamCard from "../../components/cards/TeamCard";
 
 import "./About.css";
-import ButtonMain from "../Buttons/ButtonMain";
+import ButtonMain from "../../components/Buttons/ButtonMain";
 
 function About() {
   return (

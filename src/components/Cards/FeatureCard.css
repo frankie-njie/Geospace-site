@@ -1,9 +1,13 @@
 .feature{
-    margin-bottom: 7%;
+    margin-bottom: 3rem;
     border: 1px solid #EEF0F2;
     border-radius: 4px;
     box-shadow: 0px 15px 30px rgb(0 0 0 / 15%);
     /* width: 26rem */
+}
+.feature-div{
+    justify-content: space-evenly;
+    align-items: center;
 }
 .feature-icon {
     border-radius: 50%;
@@ -12,10 +16,15 @@
 .feature-text{
     font-size: 14px;
 }
+/* .features-div:first-child{
+    padding: 0;
+} */
 
 @media (max-width: 600px) {
     .feature-icon{
-        width: 30%;
         height: 100%;
+    }
+    .features-div:first-child{
+        padding: 0;
     }
 }

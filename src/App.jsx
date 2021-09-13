@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Products from "./Pages/Products";
-import Services from "./Pages/Services";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import ProductDesc from "./Pages/ProductDesc";
-import SingleService from "./Pages/SingleService";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import Products from "./pages/products/Products";
+import Services from "./pages/our_services/Services";
+import NavBar from "./components/navbar/NavBar";
+import Footer from "./components/footer/Footer";
+import ProductDesc from "./pages/products/ProductDesc";
+import SingleService from "./pages/our_services/SingleService";
+import FeatureComponent from "./components/FeatureComponent/featureComp";
 
 function App() {
   return (

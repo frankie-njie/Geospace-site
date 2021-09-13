@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Tabs, Tab, Carousel} from "react-bootstrap";
-import ButtonMain from "../Buttons/ButtonMain";
-import ProductCard from "../Cards/ProductCard";
+import ButtonMain from "../../components/Buttons/ButtonMain";
+import ProductCard from "../../components/cards/ProductCard";
 import "./ProductDesc.css";
 
 function ProductDesc(props) {

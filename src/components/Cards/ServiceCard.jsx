@@ -8,10 +8,9 @@ function ServiceCard(props) {
         <Card className="service-card" style={{ width: '20rem' }}>
             <Card.Img variant="top" src="images/grey-bg.jpg" />
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{props.name}</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                {props.desc}
                 </Card.Text>
                 <Card.Link href="#">Learn More</Card.Link>
             </Card.Body>

@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { Col, Row, Form } from "react-bootstrap";
-import ButtonMain from "../Buttons/ButtonMain";
-import Features from "../Cards/FeatureCard";
-import ServiceCard from "../Cards/ServiceCard";
-import ProductCard from "../Cards/ProductCard";
+import ButtonMain from "../../components/Buttons/ButtonMain";
+import Features from "../../components/cards/FeatureCard";
+import ServiceCard from "../../components/cards/ServiceCard";
+import ProductCard from "../../components/cards/ProductCard";
+import FeatureComponent from "../../components/FeatureComponent/FeatureComp";
 import './Home.css'
 
 
@@ -24,6 +25,7 @@ function Home(props) {
         })
         .then(response => response.json())
         .then(data => {
+          console.log(data);
           setProducts(data.products);
           setFeatures(data.features);
           setServices(data.services)
@@ -32,9 +34,9 @@ function Home(props) {
         response();
       }, [homeUrl])
 
-      // let {features, services, products} = homeData;
-      console.log(products);
-      console.log("features", features);
+      // console.log(products);
+      // console.log("features", features);
+      // console.log("services",services);
 
   return (
     <div>
@@ -60,12 +62,12 @@ function Home(props) {
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
         <Row  className="features">
-          <Col md={4} sm={12}>
+          {/* <Col md={4} xs={12}>
             <Features />
             <Features />
             <Features />
           </Col>
-          <Col md={4} sm={12}>
+          <Col md={4} xs={12}>
             <div className="feature-imgdiv">
               <img
                 className="feature-img"
@@ -76,11 +78,14 @@ function Home(props) {
               />
             </div>
           </Col>
-          <Col md={4} sm={12}>
+          <Col md={4} xs={12}>
             <Features />
             <Features />
             <Features />
-          </Col>
+        </Col>*/}
+
+        <FeatureComponent />
+
         </Row>
       </div>
 
@@ -91,12 +96,11 @@ function Home(props) {
         </p>
 
         <div className=" services d-flex flex-wrap">
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
+         {services ? services.map((service, index) => {
+           return <ServiceCard key={index} name={service.title} desc={service.description} />
+         })
+         : null 
+        }
         </div>
       </div>
 
@@ -145,17 +149,14 @@ function Home(props) {
           </p>
 
           <div className="some_products d-flex flex-wrap">
+
             {products ? products.map((product, index)=>{
              return <ProductCard key={index} name={product.name} description={product.short_description} />
             })
             : null
+
           }
-            {/* <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard /> */}
+
           </div>
           <ButtonMain type="main" path="/products" btnValue="View More" />
         </div>

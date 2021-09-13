@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Accordion, Form, FloatingLabel } from "react-bootstrap";
-import Banner from "../Banner";
-import ButtonMain from "../Buttons/ButtonMain";
+import Banner from "../../components/banner/Banner";
+import ButtonMain from "../../components/Buttons/ButtonMain";
 import "./Contact.css";
 
 function Contact() {
