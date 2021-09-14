@@ -9,7 +9,6 @@ import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
 import ProductDesc from "./pages/products/ProductDesc";
 import SingleService from "./pages/our_services/SingleService";
-import FeatureComponent from "./components/FeatureComponent/featureComp";
 
 function App() {
   return (

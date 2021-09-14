@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Col, Row, Form } from "react-bootstrap";
+import { Col, Row, Form, Carousel } from "react-bootstrap";
 import ButtonMain from "../../components/Buttons/ButtonMain";
 import Features from "../../components/cards/FeatureCard";
 import ServiceCard from "../../components/cards/ServiceCard";
@@ -84,7 +84,15 @@ function Home(props) {
             <Features />
         </Col>*/}
 
-        <FeatureComponent />
+        <Carousel controls={false}>
+          <Carousel.Item>
+            <FeatureComponent />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FeatureComponent />
+          </Carousel.Item>
+        </Carousel>
+
 
         </Row>
       </div>
