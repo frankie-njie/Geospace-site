@@ -10,7 +10,7 @@ import ButtonMain from "../../components/Buttons/ButtonMain";
 function About() {
   return (
     <div>
-      <Banner head="About us" />
+      <Banner head="About us" src="images/aboutBanner.jpg" />
 
       <div className="to_know">
         <h2>What to Know About Us</h2>
@@ -67,7 +67,7 @@ function About() {
         <h2>Our Mission</h2>
         <Row className="our_mission_contents">
           <Col>
-            <img src="images/grey-bg.jpg" alt="" width="100%" height="100%" />
+            <img src="images/about/mission-div1.jpg" alt="" width="100%" height="100%" />
           </Col>
           <Col>
             <p>
@@ -103,7 +103,7 @@ function About() {
             </p>
           </Col>
           <Col>
-            <img src="images/grey-bg.jpg" alt="" width="100%" height="100%" />
+            <img src="images/about/mission-div.jpg" alt="" width="100%" height="100%" />
           </Col>
         </Row>
       </div>
@@ -129,7 +129,7 @@ function About() {
             <Col>
               <img
                 className="img"
-                src="images/grey-bg.jpg"
+                src="images/about/productslink.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -138,7 +138,7 @@ function About() {
             <Col>
               <img
                 className="img"
-                src="images/grey-bg.jpg"
+                src="images/about/serviceslink.jpg"
                 alt=""
                 width="100%"
                 height="100%"

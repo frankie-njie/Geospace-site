@@ -7,7 +7,7 @@ import Banner from "../../components/banner/Banner";
 function Services (){
     return (
         <div>
-            <Banner head="Services" />
+            <Banner head="Services" src="images/serviceBanner.jpg"/>
             <div className="service-all d-flex flex-wrap">
             <ServiceCard />
             <ServiceCard />

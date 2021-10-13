@@ -1,46 +1,66 @@
-import React, {useState, useEffect} from "react";
-import { Col, Row, Form, Carousel } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Col, Row, Form, Carousel, CardImg } from "react-bootstrap";
 import ButtonMain from "../../components/Buttons/ButtonMain";
 import Features from "../../components/cards/FeatureCard";
 import ServiceCard from "../../components/cards/ServiceCard";
 import ProductCard from "../../components/cards/ProductCard";
 import FeatureComponent from "../../components/FeatureComponent/FeatureComp";
-import './Home.css'
-
+import "./Home.css";
 
 function Home(props) {
-  let homeUrl = 'https://api.next.geospaceafrica.com/api/navigation/home/';
+  let homeUrl = "https://api.next.geospaceafrica.com/api/navigation/home/";
   const [products, setProducts] = useState();
   const [features, setFeatures] = useState();
-  const [services, setServices] = useState()
+  const [services, setServices] = useState();
 
-      useEffect(() => {
-        const response = async () => {
-        return fetch(homeUrl) 
-        .then(response => {
-          if(response.ok){
-            return response
+  useEffect(() => {
+    const response = async () => {
+      return fetch(homeUrl)
+        .then((response) => {
+          if (response.ok) {
+            return response;
           }
           throw Error(response.statusText);
         })
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
           console.log(data);
           setProducts(data.products);
           setFeatures(data.features);
-          setServices(data.services)
-        })
-      }
-        response();
-      }, [homeUrl])
+          setServices(data.services);
+        });
+    };
+    response();
+  }, [homeUrl]);
 
-      // console.log(products);
-      // console.log("features", features);
-      // console.log("services",services);
+  console.log(products);
+  console.log("features", features);
+  // console.log("services",services);
+
+  //client Object
+  const srcUrl = `images/clients_img/`;
+  const clientImg = [
+    { name: "cde", src: srcUrl + "cde.jpeg", alt: "CDE logo" },
+    { name: "cud", src: srcUrl + "cud.jpeg", alt: "CUD logo" },
+    { name: "dibombori", src: srcUrl + "dibombari.jpeg", alt: "CDE logo" },
+    { name: "eneo", src: srcUrl + "eneo.png", alt: "Eneo logo" },
+    { name: "inc", src: srcUrl + "inc.jpeg", alt: "Inc logo" },
+    { name: "maeture", src: srcUrl + "maeture.jpeg", alt: "maeture logo" },
+    { name: "mindacaf", src: srcUrl + "mindcaf.png", alt: "mindcaf logo" },
+    { name: "sonara", src: srcUrl + "sonara.png", alt: "Sonara logo" },
+  ];
 
   return (
     <div>
-      <div className="landing mb-4">
+      <div
+        className="landing mb-4 "
+        src=""
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url(/images/home/landingresize.png)`,
+          backgroundRepeat: "no-repeat",
+          objectFit: "cover",
+        }}
+      >
         <div className="landing-div">
           <h3>WELCOME TO</h3>
           <h1>GEOSPACE AFRICA LTD</h1>
@@ -49,8 +69,12 @@ function Home(props) {
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
           <div className="landing-buttons">
-            <ButtonMain type="main" path="/products"  btnValue="Products" />
-            <ButtonMain type="outline" path="/services" btnValue="Our Services" />
+            <ButtonMain type="main" path="/products" btnValue="Products" />
+            <ButtonMain
+              type="outline"
+              path="/services"
+              btnValue="Our Services"
+            />
           </div>
         </div>
       </div>
@@ -61,7 +85,7 @@ function Home(props) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
-        <Row  className="features">
+        <Row className="features">
           {/* <Col md={4} xs={12}>
             <Features />
             <Features />
@@ -84,16 +108,14 @@ function Home(props) {
             <Features />
         </Col>*/}
 
-        <Carousel controls={false}>
-          <Carousel.Item>
-            <FeatureComponent />
-          </Carousel.Item>
-          <Carousel.Item>
-            <FeatureComponent />
-          </Carousel.Item>
-        </Carousel>
-
-
+          <Carousel controls={false}>
+            <Carousel.Item>
+              <FeatureComponent />
+            </Carousel.Item>
+            <Carousel.Item>
+              <FeatureComponent />
+            </Carousel.Item>
+          </Carousel>
         </Row>
       </div>
 
@@ -104,11 +126,17 @@ function Home(props) {
         </p>
 
         <div className=" services d-flex flex-wrap">
-         {services ? services.map((service, index) => {
-           return <ServiceCard key={index} name={service.title} desc={service.description} />
-         })
-         : null 
-        }
+          {services
+            ? services.map((service, index) => {
+                return (
+                  <ServiceCard
+                    key={index}
+                    name={service.title}
+                    desc={service.description}
+                  />
+                );
+              })
+            : null}
         </div>
       </div>
 
@@ -142,7 +170,12 @@ function Home(props) {
               <ButtonMain type="alt" path="/about" btnValue="learn More" />
             </Col>
             <Col md={6} sm={12}>
-              <img src="images/grey-bg.jpg" alt="" width="100%" height="100%" />
+              <img
+                src="images/about_us.jpg"
+                alt=""
+                width="100%"
+                height="100%"
+              />
             </Col>
           </Row>
         </div>
@@ -157,14 +190,17 @@ function Home(props) {
           </p>
 
           <div className="some_products d-flex flex-wrap">
-
-            {products ? products.map((product, index)=>{
-             return <ProductCard key={index} name={product.name} description={product.short_description} />
-            })
-            : null
-
-          }
-
+            {products
+              ? products.map((product, index) => {
+                  return (
+                    <ProductCard
+                      key={index}
+                      name={product.name}
+                      description={product.short_description}
+                    />
+                  );
+                })
+              : null}
           </div>
           <ButtonMain type="main" path="/products" btnValue="View More" />
         </div>
@@ -175,30 +211,30 @@ function Home(props) {
         <div className="partners-div d-flex">
           <img
             className="partner_img"
-            src="images/grey-bg.jpg"
+            src="images/partners/leica.png"
             alt=""
-            width="250px"
+            width="200px"
+            height="120px"
+          />
+          <img
+            className="partner_img"
+            src="images/partners/sensefly.png"
+            alt=""
+            width="200px"
+            height="120px"
+          />
+          <img
+            className="partner_img"
+            src="images/partners/chcnav.svg"
+            alt=""
+            width="200px"
             height="120px"
           />
           <img
             className="partner_img"
             src="images/grey-bg.jpg"
             alt=""
-            width="250px"
-            height="120px"
-          />
-          <img
-            className="partner_img"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="250px"
-            height="120px"
-          />
-          <img
-            className="partner_img"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="250px"
+            width="200px"
             height="120px"
           />
         </div>
@@ -245,62 +281,18 @@ function Home(props) {
       <div className="works mb-4">
         <h2>We have Worked With</h2>
         <div className="works_img d-flex">
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
-          <img
-            className="single-partner"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="150px"
-            height="100px"
-          />
+          {clientImg.map((img, index) => {
+            return (
+              <img
+                key={index}
+                className="single-partner"
+                src={img.src}
+                alt={img.alt}
+                width="150px"
+                height="100px"
+              />
+            );
+          })}
         </div>
       </div>
     </div>

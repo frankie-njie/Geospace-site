@@ -1,210 +1,229 @@
 /* landing */
 
-.landing{
+.landing {
+  height: 100vh;
+  /* margin: auto 15%; */
+  text-align: center;
+  background-color: rgb(134, 134, 134);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* position: relative; */
+  /* background-image: url("/grey-bg.jpg"); */
+}
+.landing-div{
+  text-align: center;
+  position: absolute;
+  padding: 0 2%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* product features */
+
+.product_features {
+  /* height: 80vh; */
+  margin: 5%;
+  padding: 0.5rem 1rem;
+}
+
+.product_features .features {
+  margin: 7% auto;
+}
+
+.product_features>p {
+  text-align: center;
+}
+
+.feature-imgdiv {
+  text-align: center;
+}
+
+.feature-img {
+  margin: 4% auto;
+  width: 22rem;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+/* Our servies */
+
+.our-services {
+  margin: 5%;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.our-services>p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services {
+  justify-content: center;
+}
+
+/* About Section */
+
+.contents {
+  background-color: #023E8A;
+  /* height: 85vh; */
+}
+
+.about_geospace {
+  padding: 2.5rem;
+  color: #EEF0F2;
+  margin: auto 5%;
+}
+
+.about_geospace>h2 {
+  color: #EEF0F2;
+  margin-bottom: 1.5rem;
+}
+
+.about_geospace>div {
+  justify-content: center;
+  margin: 7% auto;
+}
+
+/* Product Section */
+
+.product-contents {
+  background-color: #EEF0F2;
+}
+
+.products {
+  margin: auto 5%;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.some_products {
+  justify-content: center;
+  margin: 5% auto;
+}
+
+/* partners */
+
+.partners {
+  margin: auto 5%;
+}
+
+.partners-div {
+  margin: 5% auto;
+}
+
+.partner_img {
+  object-fit: contain;
+  width: 25%;
+  margin: 10px;
+}
+
+/* Get in Touch */
+
+.contact_contents {
+  background-color: #EEF0F2;
+}
+
+.get_in_touch {
+  margin: auto 5%;
+  padding: 0.5rem 0;
+}
+
+.get_in_touch>p {
+  text-align: center;
+}
+
+.contact-form {
+  margin: 5% auto
+}
+
+.form-group>input {
+  height: 2.5rem;
+  margin-bottom: 12px;
+}
+
+/* works */
+
+.works {
+  margin: auto 5%;
+}
+
+.works_img {
+  margin: 4rem auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-partner {
+  margin: 10px 5px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .landing {
     height: 100vh;
-    margin: auto 15%;
     text-align: center;
-    padding: 20% 15%;
-    /* position: relative; */
+    /* padding: 20% 0;  */
+    margin: auto;
+    position: relative;
   }
-
-  
+  .landing-div {
+    padding: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .landing-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
   /* product features */
-  
-  .product_features{
-    /* height: 80vh; */
-    margin: 5%;
-    padding: 0.5rem 1rem;
+  .product_features {
+    padding: 0;
   }
-  .product_features .features{
-    margin: 7% auto;
+  .our-services {
+    padding: 0;
   }
-  .product_features > p{
-    text-align: center;
-  }
-  
-  .feature-imgdiv{
-    text-align: center;
-  }
-  .feature-img{
-    margin: 4% auto;
-    width: 22rem;
-    height: 350px;
-    border-radius: 50%;
-  }
-
-  .carousel-inner{
-    overflow: visible;
-  }
-  
-  /* Our servies */
-  
-  .our-services{
-    margin: 5%;
-    align-items: center;
-    padding: 0.5rem 2.5rem;
-  }
-  .our-services > p{
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .services{
-    justify-content: center;
-  }
-  
-  
   /* About Section */
-  
-  .contents{
-    background-color: #023E8A;
-    /* height: 85vh; */
+  .about_geospace {
+    padding: 2.5rem 0;
   }
-  .about_geospace{
-    padding: 2.5rem;
-    color: #EEF0F2;
-    margin: auto 5%;
+  .about-row {
+    flex-direction: column-reverse;
   }
-  
-  .about_geospace > h2{
-    color: #EEF0F2;
+  .about-row>div {
+    margin: 1rem 0
+  }
+  /* Product Section */
+  .products {
+    padding: 2.5rem 0;
+  }
+  /* partners */
+  .partners-div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .partner_img {
+    width: 44%;
+  }
+  /* Get in Touch */
+  .contact-form {
+    flex-direction: column-reverse;
+  }
+  .contact-form>div {
     margin-bottom: 1.5rem;
   }
-  .about_geospace > div {
-    justify-content: center;
-    margin: 7% auto;
-  }
-  
-  
-  /* Product Section */
-  .product-contents{
-    background-color: #EEF0F2;
-  }
-  .products{
-    margin: auto 5%;
-    text-align: center;
-    padding: 2.5rem;
-  }
-  
-  .some_products{
-    justify-content: center;
-    margin: 5% auto;
-  }
-  
-  /* partners */
-  
-  .partners{
-    margin: auto 5%;
-  }
-  .partners-div{
-    margin: 5% auto;
-  }
-  .partner_img{
-    width: 25%;
-    margin: 10px;
-  }
-  
-  /* Get in Touch */
-  .contact_contents{
-    background-color: #EEF0F2;
-  }
-  .get_in_touch{
-    margin: auto 5%;
-    padding: 0.5rem 0;
-  }
-  .get_in_touch > p{
-    text-align:  center;
-  }
-  .contact-form {
-    margin: 5% auto
-  }
-  .form-group > input{
-    height: 2.5rem;
-    margin-bottom: 12px;
-  }
-  
-  /* works */
-  .works{
-    margin: auto 5%;
-  }
   .works_img {
-    margin: 4rem auto;
-    justify-content: space-between ;
-    flex-wrap: wrap;
+    justify-content: center;
   }
-  .single-partner{
-    margin: 10px 5px;
-  }
-  
-
-
-
-  @media (max-width: 600px) {
-    .landing{
-      height: 100vh;
-      text-align: center;
-      padding: 20% 0;
-      margin: auto 5%;
-      position: relative; 
-     } 
-
-    .landing-div{
-      /* padding: 5%; */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-    }
-
-    .landing-buttons {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    /* product features */
-    .product_features{
-      padding: 0;
-    }
-    .our-services{
-      padding: 0;
-    }
-
-    /* About Section */
-    .about_geospace{
-      padding: 2.5rem 0;
-    }
-
-    .about-row{
-      flex-direction: column-reverse;
-    }
-    .about-row > div {
-      margin: 1rem 0
-    }
-
-    /* Product Section */
-    .products{
-      padding: 2.5rem 0;
-    }
-
-    /* partners */
-    .partners-div{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .partner_img{
-      width: 44%;
-    }
-
-    /* Get in Touch */
-    .contact-form{
-      flex-direction: column-reverse;
-    }
-    .contact-form > div{
-      margin-bottom: 1.5rem;
-    }
-
-    .works_img {
-      justify-content: center ;
-    }
-    
-  }
+}

@@ -13,7 +13,7 @@ const products = [
 function Products (){
     return (
         <div>
-        <Banner head="Products" />
+        <Banner head="Products" src="images/productBanner.jpg" />
         <Row className="products-page">
             <Col md={2}>
                 <h3>Categories</h3>

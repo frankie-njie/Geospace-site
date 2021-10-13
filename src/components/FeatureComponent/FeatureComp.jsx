@@ -33,3 +33,7 @@ function FeatureComp(props) {
 }
 
 export default FeatureComp;
+
+
+
+const featruedProducts = []
