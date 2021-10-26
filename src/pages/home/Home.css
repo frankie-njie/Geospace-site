@@ -25,7 +25,7 @@
 /* product features */
 
 .product_features {
-  /* height: 80vh; */
+  height: 80vh;
   margin: 5%;
   padding: 0.5rem 1rem;
 }
@@ -44,9 +44,9 @@
 
 .feature-img {
   margin: 4% auto;
-  width: 22rem;
+  /* width: 22rem;
   height: 350px;
-  border-radius: 50%;
+  border-radius: 50%; */
 }
 
 .carousel-inner {
@@ -121,7 +121,7 @@
 }
 
 .partner_img {
-  object-fit: contain;
+  object-fit: scale-down;
   width: 25%;
   margin: 10px;
 }
@@ -190,6 +190,7 @@
   /* product features */
   .product_features {
     padding: 0;
+    height: inherit;
   }
   .our-services {
     padding: 0;

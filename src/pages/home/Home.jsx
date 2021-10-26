@@ -5,50 +5,59 @@ import Features from "../../components/cards/FeatureCard";
 import ServiceCard from "../../components/cards/ServiceCard";
 import ProductCard from "../../components/cards/ProductCard";
 import FeatureComponent from "../../components/FeatureComponent/FeatureComp";
+import featuredProds from "./features";
 import "./Home.css";
 
 function Home(props) {
-  let homeUrl = "https://api.next.geospaceafrica.com/api/navigation/home/";
+  // let homeUrl = "https://api.next.geospaceafrica.com/api/navigation/home/";
   const [products, setProducts] = useState();
   const [features, setFeatures] = useState();
-  const [services, setServices] = useState();
+  // const [services, setServices] = useState();
 
-  useEffect(() => {
-    const response = async () => {
-      return fetch(homeUrl)
-        .then((response) => {
-          if (response.ok) {
-            return response;
-          }
-          throw Error(response.statusText);
-        })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          setProducts(data.products);
-          setFeatures(data.features);
-          setServices(data.services);
-        });
-    };
-    response();
-  }, [homeUrl]);
+  // useEffect(() => {
+  //   const response = async () => {
+  //     return fetch(homeUrl)
+  //       .then((response) => {
+  //         if (response.ok) {
+  //           return response;
+  //         }
+  //         throw Error(response.statusText);
+  //       })
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         console.log(data);
+  //         setProducts(data.products);
+  //         setFeatures(data.features);
+  //         // setServices(data.services);
+  //       });
+  //   };
+  //   response();
+  // }, [homeUrl]);
 
-  console.log(products);
-  console.log("features", features);
+  // console.log(products);
+  // console.log("features", features);
   // console.log("services",services);
 
   //client Object
   const srcUrl = `images/clients_img/`;
   const clientImg = [
-    { name: "cde", src: srcUrl + "cde.jpeg", alt: "CDE logo" },
     { name: "cud", src: srcUrl + "cud.jpeg", alt: "CUD logo" },
-    { name: "dibombori", src: srcUrl + "dibombari.jpeg", alt: "CDE logo" },
+    { name: "dibombari", src: srcUrl + "dibombari.jpeg", alt: "CDE logo" },
     { name: "eneo", src: srcUrl + "eneo.png", alt: "Eneo logo" },
     { name: "inc", src: srcUrl + "inc.jpeg", alt: "Inc logo" },
     { name: "maeture", src: srcUrl + "maeture.jpeg", alt: "maeture logo" },
     { name: "mindacaf", src: srcUrl + "mindcaf.png", alt: "mindcaf logo" },
     { name: "sonara", src: srcUrl + "sonara.png", alt: "Sonara logo" },
   ];
+
+  //partner
+  let partnersUrl = `images/partners/`
+  let partnersImg = [
+    { name: "leica", src: partnersUrl + "leica.png", alt: "leica logo" },
+    { name: "sensefly", src: partnersUrl + "sensefly.png", alt: "sensefly logo" },
+    { name: "chcnav", src: partnersUrl + "chcnav.svg", alt: "chcnav logo" },
+    { name: "castral", src: partnersUrl + "logo-castral.svg", alt: "castral logo" }
+  ]
 
   return (
     <div>
@@ -108,14 +117,25 @@ function Home(props) {
             <Features />
         </Col>*/}
 
-          <Carousel controls={false}>
+        <Carousel controls={false}>
+           
+        {featuredProds.map((feature, i)=>{
+          return (
+          <Carousel.Item key={i}>
+            <FeatureComponent features={feature.features} featureImg={feature.prodSrc} />
+          </Carousel.Item>
+          )
+        })}
+        </Carousel>
+
+          {/* <Carousel controls={false}>
             <Carousel.Item>
               <FeatureComponent />
             </Carousel.Item>
             <Carousel.Item>
               <FeatureComponent />
             </Carousel.Item>
-          </Carousel>
+          </Carousel> */}
         </Row>
       </div>
 
@@ -126,7 +146,7 @@ function Home(props) {
         </p>
 
         <div className=" services d-flex flex-wrap">
-          {services
+          {/* {services
             ? services.map((service, index) => {
                 return (
                   <ServiceCard
@@ -136,7 +156,13 @@ function Home(props) {
                   />
                 );
               })
-            : null}
+            : null} */}
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
         </div>
       </div>
 
@@ -171,7 +197,7 @@ function Home(props) {
             </Col>
             <Col md={6} sm={12}>
               <img
-                src="images/about_us.jpg"
+                src="images/home/about_us.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -190,7 +216,7 @@ function Home(props) {
           </p>
 
           <div className="some_products d-flex flex-wrap">
-            {products
+            {/* {products
               ? products.map((product, index) => {
                   return (
                     <ProductCard
@@ -200,7 +226,13 @@ function Home(props) {
                     />
                   );
                 })
-              : null}
+              : null} */}
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
           </div>
           <ButtonMain type="main" path="/products" btnValue="View More" />
         </div>
@@ -209,34 +241,18 @@ function Home(props) {
       <div className="partners mb-4">
         <h2>Our Partners</h2>
         <div className="partners-div d-flex">
-          <img
-            className="partner_img"
-            src="images/partners/leica.png"
-            alt=""
-            width="200px"
-            height="120px"
-          />
-          <img
-            className="partner_img"
-            src="images/partners/sensefly.png"
-            alt=""
-            width="200px"
-            height="120px"
-          />
-          <img
-            className="partner_img"
-            src="images/partners/chcnav.svg"
-            alt=""
-            width="200px"
-            height="120px"
-          />
-          <img
-            className="partner_img"
-            src="images/grey-bg.jpg"
-            alt=""
-            width="200px"
-            height="120px"
-          />
+          {partnersImg.map((partner,index)=>{
+           return (
+              <img
+                key={index}
+                className="partner_img"
+                src={partner.src}
+                alt={partner.alt}
+                width="200px"
+                height="100px"
+              />
+            );
+          })}
         </div>
       </div>
 

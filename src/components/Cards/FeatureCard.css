@@ -11,10 +11,15 @@
 }
 .feature-icon {
     border-radius: 50%;
-    background-color: rgb(201, 201, 201);
 }
 .feature-text{
     font-size: 14px;
+    /* line-height: 16px; */
+    height: 2.8rem;
+    overflow: auto;
+}
+.feature-text::-webkit-scrollbar{
+    display: none;
 }
 /* .features-div:first-child{
     padding: 0;

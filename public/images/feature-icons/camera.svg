@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <g id="camera" transform="translate(0.012 0.405)">
+    <circle id="Ellipse_28" data-name="Ellipse 28" cx="90" cy="90" r="90" transform="translate(-0.012 -0.405)" fill="#ffc947"/>
+    <g id="camera-2" data-name="camera" transform="translate(44.3 44.3)">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="11.979" cy="11.979" r="11.979" transform="translate(32.942 32.942)" fill="#eef0f2"/>
+      <path id="Path_8" data-name="Path 8" d="M30.2,4l-6.85,7.487H11.487A7.485,7.485,0,0,0,4,18.974V63.895a7.485,7.485,0,0,0,7.487,7.487H71.382a7.485,7.485,0,0,0,7.487-7.487V18.974a7.485,7.485,0,0,0-7.487-7.487H59.515L52.665,4Zm11.23,56.151A18.717,18.717,0,1,1,60.151,41.434,18.724,18.724,0,0,1,41.434,60.151Z" transform="translate(3.487 3.487)" fill="#eef0f2"/>
+      <path id="Path_9" data-name="Path 9" d="M0,0H89.842V89.842H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

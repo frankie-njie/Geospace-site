@@ -7,7 +7,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <div>
-      <Banner head="Contact Us" />
+      <Banner head="Contact Us" src="images/contactBanner.jpg"/>
     <div className="contact-content">
       <h2>Get In Touch</h2>
       <Row className="info-contact">
@@ -45,8 +45,8 @@ function Contact() {
           <div className="address">
             <h3>Contact Information</h3>
             <div>
-              <p><i className="fas add-fab fa-mobile-alt fa-lg"></i>647478383</p>
-              <p><i className="fas add-fab fa-phone-alt fa-lg"></i>847937237</p>
+              <p><i className="fas add-fab fa-mobile-alt fa-lg"></i>670 280 101</p>
+              {/* <p><i className="fas add-fab fa-phone-alt fa-lg"></i>847937237</p> */}
               <p><i className="fas add-fab fa-envelope fa-lg"></i>geospace@gmail.com</p>
               <p><i className="fas add-fab fa-map-marker-alt fa-lg"></i>Douala, Cameroon</p>
             </div>
