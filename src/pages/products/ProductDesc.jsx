@@ -1,10 +1,16 @@
-import React from "react";
-import { Col, Row, Tabs, Tab, Carousel} from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Row, Tabs, Tab, Carousel } from "react-bootstrap";
 import ButtonMain from "../../components/Buttons/ButtonMain";
 import ProductCard from "../../components/cards/ProductCard";
 import "./ProductDesc.css";
 
 function ProductDesc(props) {
+  useEffect(() => {
+    const productId = props.match.params.id;
+    console.log(productId);
+    // fetch data for productId
+  }, []);
+
   return (
     <div className="product-content">
       <Row className="product-div mt-5 mb-5">

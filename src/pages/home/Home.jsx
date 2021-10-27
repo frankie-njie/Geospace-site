@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Form, Carousel, CardImg } from "react-bootstrap";
 import ButtonMain from "../../components/Buttons/ButtonMain";
-import Features from "../../components/cards/FeatureCard";
 import ServiceCard from "../../components/cards/ServiceCard";
 import ProductCard from "../../components/cards/ProductCard";
 import FeatureComponent from "../../components/FeatureComponent/FeatureComp";
@@ -10,8 +9,8 @@ import "./Home.css";
 
 function Home(props) {
   // let homeUrl = "https://api.next.geospaceafrica.com/api/navigation/home/";
-  const [products, setProducts] = useState();
-  const [features, setFeatures] = useState();
+  // const [products, setProducts] = useState();
+  // const [features, setFeatures] = useState();
   // const [services, setServices] = useState();
 
   // useEffect(() => {
@@ -51,13 +50,21 @@ function Home(props) {
   ];
 
   //partner
-  let partnersUrl = `images/partners/`
+  let partnersUrl = `images/partners/`;
   let partnersImg = [
     { name: "leica", src: partnersUrl + "leica.png", alt: "leica logo" },
-    { name: "sensefly", src: partnersUrl + "sensefly.png", alt: "sensefly logo" },
+    {
+      name: "sensefly",
+      src: partnersUrl + "sensefly.png",
+      alt: "sensefly logo",
+    },
     { name: "chcnav", src: partnersUrl + "chcnav.svg", alt: "chcnav logo" },
-    { name: "castral", src: partnersUrl + "logo-castral.svg", alt: "castral logo" }
-  ]
+    {
+      name: "castral",
+      src: partnersUrl + "logo-castral.svg",
+      alt: "castral logo",
+    },
+  ];
 
   return (
     <div>
@@ -95,47 +102,18 @@ function Home(props) {
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
         <Row className="features">
-          {/* <Col md={4} xs={12}>
-            <Features />
-            <Features />
-            <Features />
-          </Col>
-          <Col md={4} xs={12}>
-            <div className="feature-imgdiv">
-              <img
-                className="feature-img"
-                src="images/grey-bg.jpg"
-                width="100%"
-                height="100%"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col md={4} xs={12}>
-            <Features />
-            <Features />
-            <Features />
-        </Col>*/}
-
-        <Carousel controls={false}>
-           
-        {featuredProds.map((feature, i)=>{
-          return (
-          <Carousel.Item key={i}>
-            <FeatureComponent features={feature.features} featureImg={feature.prodSrc} />
-          </Carousel.Item>
-          )
-        })}
-        </Carousel>
-
-          {/* <Carousel controls={false}>
-            <Carousel.Item>
-              <FeatureComponent />
-            </Carousel.Item>
-            <Carousel.Item>
-              <FeatureComponent />
-            </Carousel.Item>
-          </Carousel> */}
+          <Carousel controls={false}>
+            {featuredProds.map((feature, i) => {
+              return (
+                <Carousel.Item key={i}>
+                  <FeatureComponent
+                    features={feature.features}
+                    featureImg={feature.prodSrc}
+                  />
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
         </Row>
       </div>
 
@@ -157,12 +135,12 @@ function Home(props) {
                 );
               })
             : null} */}
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
         </div>
       </div>
 
@@ -227,12 +205,12 @@ function Home(props) {
                   );
                 })
               : null} */}
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </div>
           <ButtonMain type="main" path="/products" btnValue="View More" />
         </div>
@@ -241,8 +219,8 @@ function Home(props) {
       <div className="partners mb-4">
         <h2>Our Partners</h2>
         <div className="partners-div d-flex">
-          {partnersImg.map((partner,index)=>{
-           return (
+          {partnersImg.map((partner, index) => {
+            return (
               <img
                 key={index}
                 className="partner_img"

@@ -3,27 +3,23 @@ import { Col, Row } from "react-bootstrap";
 import Features from "../cards/FeatureCard";
 
 function FeatureComp(props) {
-  const productFeatures = props.features
-  const midpoint = productFeatures.length/2
-
-  // let[title, icon, description] = productFeatures
-    // console.log(title);
-    // console.log(icon);
-    // console.log(description);
-
-    // productFeatures.forEach(product => {
-    //   console.log(product);
-    // }); 
+  const productFeatures = props.features;
+  const midpoint = productFeatures.length / 2;
 
   return (
     <div>
       <Row className="feature-div">
         <Col md={4} sm={12}>
           {productFeatures.map((feature, i) => {
-            if(i < midpoint) {
+            if (i < midpoint) {
               return (
-                <Features key={i} title={feature.title} desc={feature.description} icon={feature.icon} />
-              )
+                <Features
+                  key={i}
+                  title={feature.title}
+                  desc={feature.description}
+                  icon={feature.icon}
+                />
+              );
             }
           })}
         </Col>
@@ -39,11 +35,16 @@ function FeatureComp(props) {
           </div>
         </Col>
         <Col md={4} sm={12}>
-        {productFeatures.map((feature, i) => {
-            if(i >= midpoint) {
+          {productFeatures.map((feature, i) => {
+            if (i >= midpoint) {
               return (
-                <Features key={i} title={feature.title} desc={feature.description} icon={feature.icon}/>
-              )
+                <Features
+                  key={i}
+                  title={feature.title}
+                  desc={feature.description}
+                  icon={feature.icon}
+                />
+              );
             }
           })}
         </Col>
@@ -53,6 +54,3 @@ function FeatureComp(props) {
 }
 
 export default FeatureComp;
-
-
- 

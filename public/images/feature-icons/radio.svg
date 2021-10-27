@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
   <g id="radio" transform="translate(0 0.405)">
-    <circle id="Ellipse_25" data-name="Ellipse 25" cx="90" cy="90" r="90" transform="translate(0 -0.405)" fill="#480032"/>
-    <g id="signal-wave" transform="translate(47.425 59.835)">
-      <path id="Path_62" data-name="Path 62" d="M19,37.992A10.593,10.593,0,1,0,29.593,27.4,10.6,10.6,0,0,0,19,37.992Zm17.655,0a7.062,7.062,0,1,1-7.062-7.062A7.069,7.069,0,0,1,36.655,37.992Zm20.4-27.466a38.847,38.847,0,0,1,0,54.932l2.5,2.5a42.376,42.376,0,0,0,0-59.925l-2.5,2.5Z" transform="translate(12.779 -8.029)" fill="#eef0f2"/>
-      <path id="Path_63" data-name="Path 63" d="M57.222,53.634a28.242,28.242,0,0,0,0-39.947l-2.5,2.5a24.713,24.713,0,0,1,0,34.954l2.5,2.5ZM17.275,13.687a28.242,28.242,0,0,0,0,39.947l2.5-2.5a24.713,24.713,0,0,1,0-34.954Z" transform="translate(5.124 -3.698)" fill="#eef0f2"/>
-      <path id="Path_64" data-name="Path 64" d="M15.906,65.458a38.847,38.847,0,0,1,0-54.932l-2.5-2.5a42.376,42.376,0,0,0,0,59.925l2.5-2.5Z" transform="translate(-1 -8.029)" fill="#eef0f2"/>
+    <circle id="Ellipse_25" data-name="Ellipse 25" cx="100" cy="100" r="100" transform="translate(0 -0.405)" fill="#480032"/>
+    <g id="signal-wave" transform="translate(52.46 66.361)">
+      <path id="Path_62" data-name="Path 62" d="M19,41.487A11.829,11.829,0,1,0,30.829,29.658,11.841,11.841,0,0,0,19,41.487Zm19.715,0A7.886,7.886,0,1,1,30.829,33.6,7.894,7.894,0,0,1,38.715,41.487ZM61.5,10.817a43.379,43.379,0,0,1,0,61.341l2.788,2.788a47.32,47.32,0,0,0,0-66.916L61.5,10.817Z" transform="translate(16.487 -8.029)" fill="#fff"/>
+      <path id="Path_63" data-name="Path 63" d="M62.847,58.294a31.537,31.537,0,0,0,0-44.607L60.06,16.475a27.6,27.6,0,0,1,0,39.032l2.788,2.788ZM18.24,13.687a31.537,31.537,0,0,0,0,44.607l2.788-2.788a27.6,27.6,0,0,1,0-39.032Z" transform="translate(6.772 -2.532)" fill="#fff"/>
+      <path id="Path_64" data-name="Path 64" d="M17.645,72.158a43.379,43.379,0,0,1,0-61.341L14.858,8.029a47.32,47.32,0,0,0,0,66.916l2.788-2.788Z" transform="translate(-1 -8.029)" fill="#fff"/>
     </g>
   </g>
 </svg>

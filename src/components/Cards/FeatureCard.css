@@ -14,16 +14,12 @@
 }
 .feature-text{
     font-size: 14px;
-    /* line-height: 16px; */
     height: 2.8rem;
     overflow: auto;
 }
 .feature-text::-webkit-scrollbar{
     display: none;
 }
-/* .features-div:first-child{
-    padding: 0;
-} */
 
 @media (max-width: 600px) {
     .feature-icon{

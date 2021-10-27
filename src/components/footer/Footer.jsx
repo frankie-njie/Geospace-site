@@ -37,7 +37,7 @@ function Footer() {
               <p className="footer-details">
                 <Link to="/portfolio">Portfolio</Link>
               </p>
-              <Link to="/productsdesc">SingleProud</Link>
+              <Link to="2/productsdesc">SingleProud</Link>
             </div>
           </Col>
           <Col className="footer-body">
@@ -64,23 +64,17 @@ function Footer() {
         </Row>
         <Row>
           <div className="footer-icons">
-            <a href="" className="me-4 text-reset">
+            <a href="https://www.facebook.com/geospaceafrica/" className="me-4 text-reset">
               <i className="fab fab-foot fa-facebook-f fa-lg"></i>
             </a>
-            <a href="" className="me-4 text-reset">
+            <a href="https://twitter.com/geospaceltd" className="me-4 text-reset">
               <i className="fab fab-foot fa-twitter fa-lg"></i>
             </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fab-foot fa-google fa-lg"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
+            <a href="https://www.instagram.com/geospaceafrica/" className="me-4 text-reset">
               <i className="fab fab-foot fa-instagram fa-lg"></i>
             </a>
-            <a href="" className="me-4 text-reset">
+            <a href="https://www.linkedin.com/company/geospace-africa-ltd/about/" className="me-4 text-reset">
               <i className="fab fab-foot fa-linkedin fa-lg"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fab-foot fa-github fa-lg"></i>
             </a>
           </div>
         </Row>

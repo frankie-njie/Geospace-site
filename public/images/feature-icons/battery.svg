@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
   <g id="battery" transform="translate(-0.045 -0.045)">
-    <circle id="Ellipse_24" data-name="Ellipse 24" cx="90" cy="90" r="90" transform="translate(0.045 0.045)" fill="#44e878"/>
-    <path id="battery-2" data-name="battery" d="M88.429,38.842a4.548,4.548,0,0,1-4.549-4.549V25.2a4.549,4.549,0,1,1,9.1,0v9.1a4.548,4.548,0,0,1-4.549,4.549Zm-18.2,13.647H11.1a9.108,9.108,0,0,1-9.1-9.1V16.1A9.108,9.108,0,0,1,11.1,7H70.234a9.108,9.108,0,0,1,9.1,9.1V43.391a9.108,9.108,0,0,1-9.1,9.1Z" transform="translate(42.411 60.217)" fill="#eef0f2"/>
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="100" cy="100" r="100" transform="translate(0.045 0.045)" fill="#44e878"/>
+    <path id="battery-2" data-name="battery" d="M98.033,42.38a5.053,5.053,0,0,1-5.054-5.054V27.217a5.054,5.054,0,1,1,10.109,0V37.326a5.053,5.053,0,0,1-5.054,5.054ZM77.815,57.544H12.109A10.12,10.12,0,0,1,2,47.435V17.109A10.12,10.12,0,0,1,12.109,7H77.815A10.12,10.12,0,0,1,87.924,17.109V47.435A10.12,10.12,0,0,1,77.815,57.544Z" transform="translate(47.045 68.045)" fill="#fff"/>
   </g>
 </svg>

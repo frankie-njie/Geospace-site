@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
   <g id="proven" transform="translate(0 0.248)">
-    <circle id="Ellipse_15" data-name="Ellipse 15" cx="90" cy="90" r="90" transform="translate(0 -0.248)" fill="#346751"/>
-    <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M51.37,7.031A44.339,44.339,0,1,0,95.709,51.37,44.332,44.332,0,0,0,51.37,7.031Zm22.7,32.082-28.5,28.628h-.021a3.85,3.85,0,0,1-2.473,1.172A3.732,3.732,0,0,1,40.584,67.7L28.646,55.761a.849.849,0,0,1,0-1.215l3.794-3.794a.824.824,0,0,1,1.194,0L43.1,60.217l26.006-26.2a.842.842,0,0,1,.6-.256h0a.774.774,0,0,1,.6.256l3.73,3.858A.84.84,0,0,1,74.072,39.113Z" transform="translate(38.506 38.506)" fill="#eef0f2"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="100" cy="100" r="100" transform="translate(0 -0.248)" fill="#346751"/>
+    <path id="Icon_ionic-ios-checkmark-circle" data-name="Icon ionic-ios-checkmark-circle" d="M56.3,7.031A49.265,49.265,0,1,0,105.562,56.3,49.258,49.258,0,0,0,56.3,7.031ZM81.521,42.678,49.854,74.487h-.024a4.277,4.277,0,0,1-2.747,1.3,4.147,4.147,0,0,1-2.771-1.35L31.048,61.176a.944.944,0,0,1,0-1.35l4.216-4.216a.916.916,0,0,1,1.326,0L47.107,66.126,76,37.017a.935.935,0,0,1,.663-.284h0a.86.86,0,0,1,.663.284L81.474,41.3A.934.934,0,0,1,81.521,42.678Z" transform="translate(43.969 43.721)" fill="#fff"/>
   </g>
 </svg>

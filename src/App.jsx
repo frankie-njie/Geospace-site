@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/services" component={Services} />
           <Route path="/products" component={Products} />
-          <Route path="/productsdesc" component={ProductDesc} />
+          <Route path="/:id/productsdesc" component={ProductDesc} />
           <Route path="/singleservice" component={SingleService} />
         </Switch>
         <Footer />

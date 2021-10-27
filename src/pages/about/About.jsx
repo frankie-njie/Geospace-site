@@ -10,7 +10,7 @@ import ButtonMain from "../../components/Buttons/ButtonMain";
 function About() {
   return (
     <div>
-      <Banner head="About us" src="images/aboutBanner.jpg" />
+      <Banner head="About us" src="images/banners/aboutBanner.jpg" />
 
       <div className="to_know">
         <h2>What to Know About Us</h2>

@@ -7,7 +7,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <div>
-      <Banner head="Contact Us" src="images/contactBanner.jpg"/>
+      <Banner head="Contact Us" src="images/banners/contactBanner.jpg"/>
     <div className="contact-content">
       <h2>Get In Touch</h2>
       <Row className="info-contact">
